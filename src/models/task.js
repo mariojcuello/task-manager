@@ -1,4 +1,3 @@
-/** @member {Object} */
 const mongoose = require('mongoose').default
 /** @member {Object} */
 const validator = require('validator').default

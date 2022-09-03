@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+/** @member {Object} */
 const validator = require('validator')
 
 const User = mongoose.model('User', {
@@ -34,7 +35,7 @@ const User = mongoose.model('User', {
         default: 0,
         validate(value) {
             if (value < 0) {
-                throw new Error('Age must be a postive number')
+                throw new Error('Age must be a positive number')
             }
         }
     }
